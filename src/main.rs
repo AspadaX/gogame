@@ -33,7 +33,7 @@ struct Graph {
 
 impl fmt::Display for Color {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        let s: &str = match self { Empty => "", White => "white", Black => "black", };
+        let s: &str = match self { Color::Empty => "", Color::White => "white", Color::Black => "black", };
         write!(f, "{}", s)
     }
 }
